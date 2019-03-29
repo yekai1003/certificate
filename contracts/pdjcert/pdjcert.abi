@@ -1,0 +1,175 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Mar 28 17:05:12 2019",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "cert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "certID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "certnameID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "issuetime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "UserID",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "certname",
+            "base": "",
+            "fields": [
+                {
+                    "name": "certnameID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "staff",
+                    "type": "name"
+                },
+                {
+                    "name": "school",
+                    "type": "string"
+                },
+                {
+                    "name": "certRemark",
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "disablecert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "certnameID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "staff",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "issuecert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "certnameID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "userID",
+                    "type": "string"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "mkcertname",
+            "base": "",
+            "fields": [
+                {
+                    "name": "staff",
+                    "type": "name"
+                },
+                {
+                    "name": "school",
+                    "type": "string"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "query",
+            "base": "",
+            "fields": [
+                {
+                    "name": "certnameID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "certID",
+                    "type": "uint64"
+                },
+                {
+                    "name": "userID",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "disablecert",
+            "type": "disablecert",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issuecert",
+            "type": "issuecert",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "mkcertname",
+            "type": "mkcertname",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "query",
+            "type": "query",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "certnames",
+            "type": "certname",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "certs",
+            "type": "cert",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
